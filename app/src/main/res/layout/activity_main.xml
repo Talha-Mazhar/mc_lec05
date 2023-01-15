@@ -9,44 +9,39 @@
     <LinearLayout
         android:layout_width="409dp"
         android:layout_height="729dp"
-        android:orientation="horizontal"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Increment" />
-
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Decrement" />
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="409dp"
-        android:layout_height="729dp"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:id="@+id/buttonInc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:text="Increment" />
+
+        <Button
+            android:id="@+id/buttonDec"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:text="Decrement" />
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:id="@+id/textViewer"
+            android:text="0"
+            android:textSize="32sp"
             android:layout_weight="1" />
 
         <Button
+            android:id="@+id/buttonreset"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Reset"
-            android:layout_weight="0.1"
+            android:layout_weight="0"
             />
     </LinearLayout>
-
-
 </androidx.constraintlayout.widget.ConstraintLayout>
